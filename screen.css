@@ -46,6 +46,6 @@ header, header small, header h2, div, ol.projects > li {
   margin-bottom: .5em;
 }
 
-ul.meeting, #policies h2, #policies h3, #projects h3 {
+ul.meeting, #policies h2, #policies h3, #projects h3, .assigned, .news, .news p + p {
   padding-top: .5em;
 }
