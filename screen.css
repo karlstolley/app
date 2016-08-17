@@ -127,13 +127,6 @@ h4 {
 .assigned > ul > li {
   list-style-type: none;
 }
-
-
-.week ol,
-.week ul {
-  padding-top: 0;
-  padding-bottom: 12px;
-}
 .assigned h3 {
   margin-left: 24px;
 }
