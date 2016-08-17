@@ -30,7 +30,9 @@ em,
 i {
   font-style: italic;
 }
-
+del {
+  color: #CCC;
+}
 /* HTML5 Elements as Blocks; Cribbed from HTML5 Boilerplate */
 article,
 aside,
@@ -50,9 +52,14 @@ summary {
 
 /* ========== Base Styles ========== */
 
+/*
+  Using 19px/1.333 modular scale
+  http://www.modularscale.com/?19&px&1.333&web&text
+*/
+
 html {
   font-family:'Depot New W00', Helvetica, Arial, sans-serif;
-  padding: 24px;
+  padding: 12px;
 }
 
 body {
@@ -94,7 +101,7 @@ h1 {
 h2 {
   font-size: 25.537px;
   line-height: 24px;
-  padding-bottom: 48px;
+  padding-bottom: 12px;
 }
 h3,
 h4 {
@@ -110,6 +117,16 @@ h4 {
 /* ========== Layout ========== */
 
 /* ========== Modules ========== */
+
+/* Header & Footer */
+footer {
+  padding-top: 72px;
+}
+.fineprint {
+  font-size: 15px;
+  line-height: 24px;
+  padding-bottom: 24px;
+}
 
 /* Calendar */
 .calendar-weeks {
@@ -131,6 +148,9 @@ h4 {
 .meeting ol {
   padding-top: 0;
 }
+.week h4 {
+  padding-right: 12px;
+}
 .agenda .meeting {
   padding-left: 0;
 }
@@ -138,14 +158,43 @@ h4 {
   padding-top: 0;
   padding-bottom: 24px;
 }
-.assigned .meeting {
-  color: red;
-  font-weight: bold;
-}
 
 .assigned {
   background-color: #EEF; /* Temporary color, obvs */
   margin-top: 12px;
   margin-bottom: 36px;
   padding-top: 12px;
+  padding-right: 24px;
+}
+.assigned h3 {
+  padding-left: 24px;
+  padding-bottom: 12px;
+}
+.assigned h4 {
+  padding-bottom: 0;
+}
+.assigned ol {
+  padding-bottom: 12px;
+}
+
+.preview {
+  background-color: yellow;
+  padding-top: 24px;
+  margin-right: -12px;
+  padding-right: 12px;
+  margin-left: -12px;
+  padding-left: 12px;
+  margin-bottom: 24px;
+}
+#calendar .preview {
+  margin-bottom: 0;
+}
+
+/* ========== State ========== */
+
+.hasjs .extended {
+  display: none;
+}
+.is-visible .extended {
+  display: block;
 }
