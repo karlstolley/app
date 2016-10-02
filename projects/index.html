@@ -27,7 +27,7 @@
 <main id="content">
   <section class="primary">
     <h2 class="label">Projects</h2>
-    <article class="preview">
+    <article>
       <h3 id="project-one">Project One: Alpha App <small>Due Wednesday, September 28, 11:59pm CT</small></h3>
       <section class="description">
         <h4>Project Description</h4>
@@ -110,25 +110,36 @@
         </ul>
       </section>
     </article>
-    <article>
+    <article class="preview">
       <h3 id="project-two">Project Two: Beta App <small>Due Wednesday, November 9, 11:59pm CT</small></h3>
       <section class="description">
         <h4>Project Description</h4>
         <p>
           For the beta app, you will work in groups of two or three. Your group can either begin
           again with the app created by one of your group’s members for Project One, or
-          rework/abandon an idea for a brand-new app. Requirements and deliverables will be similar
+          rework/abandon an idea for a brand-new app. Requirements and deliverables are similar
           to those of Project One; however, you will more fully flesh out the design of your app,
-          both functionally and visually.
+          both functionally and visually. It must include a way to authenticate users, preferably
+          using an OAuth-based schema.
         </p>
       </section>
-      <!--
       <section class="goals">
         <h4>Project Goals</h4>
         <ul>
           <li>
-            Deploy web pages to a public server (GitHub pages, set up with your own domain name or
-            subdomain)
+            Learn to develop and refine the basic features for a web application
+          </li>
+          <li>
+            Learn to setup and build a web application in collaboration with others, using Ruby on
+            Rails
+          </li>
+          <li>
+            Learn to search, navigate, and consult the Rails documentation and Rails Guides to
+            solve your own problems
+          </li>
+          <li>
+            Learn to authenticate users using OAuth or another mechanism that does not involve
+            storing user passwords in your app
           </li>
         </ul>
       </section>
@@ -136,24 +147,28 @@
         <h4>Deliverables &amp; Milestones</h4>
         <ol>
           <li>
-            A video presentation of your work in progress, hosted on YouTube, Vimeo, or another
-            similar service and posted to Basecamp. Your Basecamp post should include a world-viewable URL of your
-            project, plus the URL to your GitHub repository. Include in the text of your post one or
-            two things you would like feedback on from the instructor and other students in the
-            class (due no later than September 7).
+            A functional Rails app that can be racked up and run locally
           </li>
           <li>
-            Substantive comments critiquing at least three other student projects. (by September 14,
-            11:59pm CT)
+            The primary GitHub repository for the app (link should be emailed to the instructor)
           </li>
-          <li>An email to the instructor containing the projects two final deliverables (by September 21, 11:59pm CT):
+          <li>
+            Your personal GitHub repository for the app (link should be emailed to the instructor)
+          </li>
+          <li>
+            An email to the instructor containing the projects two final deliverables (by November
+            9, 11:59pm CT):
             <ol>
               <li>
-                A 4-5 sentence self-critique memo of your project and your progress in class to this
+                A 5-7 sentence self-critique memo of your project and your progress in class to this
                 point
               </li>
               <li>
-                The https:// link to your project’s GitHub repository
+                A 4-5 sentence critique for each of your group members
+              </li>
+              <li>
+                The https:// link to your project’s primary GitHub repository, plus the link to
+                your own fork
               </li>
             </ol>
           </li>
@@ -162,22 +177,43 @@
       <section class="requirements">
        <h4>Requirements</h4>
         <ul>
-          <li>Valid, well-formed HTML5 and CSS</li>
-          <li>One single HTML file, and one single CSS file</li>
-          <li>JavaScript that is loaded unobtrusively (no JavaScript event attributes in your HTML, in other words) and throws no errors</li>
-          <li>HTML-based fallbacks for any media elements (image, audio, video) that you include</li>
           <li>
-            Organized, readable source that is hand-written and original (no WYSIWYGs or
-            code-generators, no Bootstrap or other off-the-shelf frameworks)
+            Use Ruby 2.3.x and Rails 5.x
           </li>
           <li>
-            A Git repository with frequent commits and meaningful commit messages that accurately
-            reflect each set of changes that you make
+            Strive for at least two database tables, <a href="http://guides.rubyonrails.org/association_basics.html">associated in some way</a>
           </li>
-          <li>GitHub repository must contain <b>only</b> the files and commits from this project</li>
+          <li>
+            Develop a suite of functional and unit tests for your application
+          </li>
+          <li>
+            Frequent, detailed commits to your Git repository (include commands you may have run,
+            e.g., rails generate, in commit messages, when applicable) and frequent pushes to your
+            GitHub remote repository; Git repository must contain <b>only</b> the files and commits
+            from this project
+          </li>
+          <li>
+            Do development work on a <code>dev</code> branch in Git; merge only the best,
+            functional, test-passing work over to the <code>master</code> branch.
+          </li>
+          <li>
+            Use pull requests or some other mechanism for staying on top of the changes you make
+            to your Rails project collaboratively
+          </li>
+          <li>
+            Create templates using HAML that leverage partials and a sensible source order
+          </li>
+          <li>
+            Create a mobile-first, responsive web design utilizing em- and percentage-based units,
+            <code>min-width</code> media queries, and SASS
+          </li>
+          <li>
+            Build a mechanism for logging in and tracking user accounts, preferably OAuth, and work
+            with session variables in Rails to maintain state for the duration of a user session
+            with your app
+          </li>
         </ul>
       </section>
-      -->
     </article>
     <article>
       <h3 id="project-three">Project Three: Revised, Publicly Deployed App <small>Due Wednesday, December 7, 11:59pm CT</small></h3>
