@@ -1,4 +1,4 @@
-@import url("https://use.typekit.net/zol5yjt.css");
+@import "//fast.fonts.net/cssapi/d645cd83-c955-4277-a114-11f6324025d4.css";
 
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -6,31 +6,12 @@
 */
 /* stylelint-disable */
 /* Keep reset CSS to one minified line */
-a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}html,.reset{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
 /* stylelint-enable */
 
 /* Custom Site Styles */
 
 /* ========== Base Styles ========== */
-
-/*
-  Using 19px/1.333 modular scale
-  http://www.modularscale.com/?19&px&1.333&web&text
-*/
-
-/*
-  Fall color palette, taken from
-  http://duoparadigms.com/2013/10/11/10-color-palettes-perfect-autumnfall-season/
-
-  Cream: #F7EFD4
-  Taupe: #D4C2B2
-  Butter: #FADDAF
-  Tea Leaf: #C2BC74
-  Pumpkin: #EB712F
-  Chili: #91371B
-  Coffee: #472C25
-
-*/
 
 html {
   /*
@@ -45,426 +26,329 @@ html {
   -ie-text-size-adjust: 100%;
   text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
-  font-family: ff-karbid-slab-web-pro, "Times New Roman", serif;
-  padding: 0.75em 9.2308%; /* 12px @ 16px/em; 60px / 650px*/
-  padding-top: 0;
-  color: #472C25; /* Coffee */
-  background: #F7EFD4; /* Cream */
-}
-body {
-  font-size: 1.1875em;         /* ~ 19px base font size */
-  line-height: 1.2631578947em; /* ~ 24px base line height */
-}
-b,
-strong {
-  font-weight: bold;
-}
-cite,
-em,
-i {
-  font-style: italic;
-}
-ins {
-  text-decoration: none;
-}
-code {
-  font-family: Monaco, Menlo, "Droid Sans Mono", Courier, "Courier New", monospace;
-  font-size: 90%;
-  background-color: rgba(0,0,0,0.1);
-}
-
-/* Links */
-a {
-  color: #91371B; /* Chili */
-  text-decoration: none;
-  border-bottom: 0.05263157895em dotted;
-}
-
-/* Paragraphs and Lists */
-p {
-  padding-bottom: 1.2631578947em;
-}
-ol,
-ul,
-li {
-  padding-bottom: 0.6315789474em; /* ~ 12px @ 19px/em */
-}
-li ul,
-li ol {
-  padding-top: 0.6315789474em; /* ~ 12px @ 19px/em */
-  margin-left: 1.2631578947em;
-  padding-bottom: 0;
-}
-ul > li {
-  list-style-type: square;
-}
-ol > li {
-  list-style-type: decimal;
-}
-
-/* Headings */
-
-h1 {
-  font-size: 1.7768947368em; /* ~ 33.761px @ 19px/em */
-  line-height: 1.0663191256em; /* ~ 36px @ 33.761px/em */
-  padding-bottom: 0.3554397085em; /* ~ 12px @ 33.761px/em */
-  font-weight: bold;
-  color: #91371B; /* Chili */
-}
-h2 {
-  font-size: 1.3440526316em; /* ~ 25.537px @ 19px/em */
-  line-height: 0.9398128206em; /* ~ 24px @ 25.537px/em */
-  padding-bottom: 0.9398128206em;
-}
-h3,
-h4 {
-  text-transform: uppercase;
-  font-weight: bold;
-  padding-bottom: 1.2631578947em;
-}
-h4 {
-  text-transform: none;
-  padding-bottom: 0.6315789474em;
-}
-header,
-footer,
-h2,
-h2 + p,
-#links,
-.assigned,
-.deliverables,
-.requirements {
-  font-family: ff-dax-web-pro, Helvetica, Arial, sans-serif;
-}
-aside h3,
-.assigned h3 {
-  font-family: ff-karbid-slab-web-pro, "Times New Roman", serif;
-}
-
-/* ========== Layout ========== */
-
-html {
-  /* Border for the nav to sit on */
-  border-top: 2.6875em solid #C2BC74; /* Tea Leaf */
-  /* ~ 43px @ 16px/em | 43 = 12 + 19 + 12 from nav */
-}
-nav {
-  position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
-}
-#instructor {
-  padding-top: 1.2631578947em;
-}
-#links {
-  padding-top: 2.5263157895em;
-}
-/* ========== Modules ========== */
-
-/* Header & Footer */
-header {
-  padding-top: 2.5263157895em; /* ~ 48px @ 19px/em */
-  padding-bottom: 1.2631578947em;
-}
-footer {
-  padding-top: 3.7894736842em; /* ~ 72px @ 19px/em */
-}
-small,
-.tagline,
-.fineprint,
-.button {
-  font-family: ff-dax-web-pro-condensed;
-  color: #555;
-  display: block;
-}
-small {
-  color: #EB712F; /* Pumpkin */
-  text-shadow: 0.052em 0.052em 0.211em #D4C2B2; /* Coffee */
-}
-h1 small {
-  font-weight: normal;
-  color: #C2BC74;
-}
-.label .button {
-  font-size: 0.744018483em; /* ~ 19px @ 25.537px/em */
-  text-transform: uppercase;
-}
-.is-current .button {
-  padding-top: 1.2631578947em;
-}
-.is-current .button .showing { display: none; }
-
-/* Links */
-.nav a {
-  display: block;
-  text-align: center;
-  line-height: 1;
-  padding: 0.6842105263em 0.1578947368em 0.5789473684em 0.1578947368em; /* 13px 3px 11px 3px */
-  background-color: #C2BC74; /* Tea Leaf */
-  color: #472C25; /* Coffee */
-  border-bottom: 0;
-}
-
-.preview a {
-  color: #EB712F; /* Pumpkin */
-}
-
-.preview .assigned a,
-.preview .deliverables a,
-.preview .requirements a {
-  color: #C2BC74; /* Tea Leaf */
-}
-
-#calendar #nav-cal a,
-#projects #nav-pro a,
-#policies #nav-pol a {
-  background-color: #EB712F; /* Pumpkin */
-  color: #472C25; /* Coffee */
-}
-
-
-/* Navigation */
-nav {
-  font-family: ff-dax-web-pro-condensed;
-}
-.nav {
-  margin-left: 0;
-  padding-bottom: 0;
-}
-.nav li {
-  float: left;
-  width: 25%;
-  list-style-type: none;
-  padding-bottom: 0;
-}
-
-/* Calendar */
-.calendar-weeks {
-  margin-left: 0;
-  padding-bottom: 0;
-}
-.week {
-  margin-left: 0;
-}
-.week,
-.meeting,
-.calendar-weeks .assigned > ul > li {
-  list-style-type: none;
-}
-.meeting {
-  padding-left: 1.2631578947em;
-}
-.meeting ol {
-  padding-top: 0;
-}
-.week h4 {
-  padding-right: 0.6315789474em;
-}
-.agenda .meeting {
-  padding-left: 0;
-}
-.agenda ol {
-  margin-left: 0;
-  padding-left: 0;
-}
-.calendar-weeks .assigned ol,
-.calendar-weeks .assigned ul {
-  margin-left: 0;
-}
-.agenda > ol:first-child {
-  padding-top: 0;
-}
-
-article + article,
-.assigned,
-.week,
-.preview,
-#projects article,
-#grading,
-.deliverables {
-  padding-top: 1.2631578947em;
-}
-.preview {
-  padding-bottom: 1.2631578947em;
-  background-color: #472C25; /* Coffee */
-  color: #FADDAF; /* Butter */
-  box-shadow: 0 0 0.316em 0.158em #666;
-}
-.preview,
-.assigned,
-.deliverables,
-.requirements {
-  padding-left: 11.3208%;
-  padding-right: 11.3208%;
-  margin: 0 -11.3208%; /* 60px / 530px (650-120) */
-}
-#projects .preview {
-  margin-top: 1.2631578947em;
-}
-.assigned h3 {
-  padding-bottom: 0.6315789474em;
-}
-li .assigned h4 {
-  padding-bottom: 0;
-}
-
-
-.assigned,
-.deliverables,
-.requirements {
-  background-color: #C2BC74; /* Tea Leaf */
+  /*
+    Major Third Modular Scale
+    http://www.modularscale.com/?19&px&1.25
+  */
+  font-size: 1.1875em; /* 19 / 16px */
+  line-height: 1.1578947368em; /* 22 / 19px = 1.1578947368 */
+  font-family: "Camphor W04", Verdana, Helvetica, Arial, sans-serif;
+  background-color: #EEE;
   color: #222;
 }
-.preview .deliverables,
-.preview .requirements {
-  background-color: #FADDAF; /* Butter */
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: bold;
 }
-.preview .assigned,
-.preview .deliverables,
-.preview .requirements {
-  background-color: #91371B; /* Chili */
+h3 {
+  font-size: 1.25em; /* 23.75 / 19 = 1.25 */
+  line-height: 1.3894736842em; /* 33 / 23.75 = 1.3894736842 */
 }
-.preview small {
-  color: #C2BC74; /* Tea Leaf */
-  text-shadow: unset;
-}
-.assigned small,
-.preview .deliverables,
-.preview .requirements,
-.preview .assigned,
-.preview .assigned h3,
-.preview .assigned small {
-  color: #FADDAF; /* Butter */
+h4 {
+  font-size: 0.8em; /* 15.2px / 19px */
+  line-height: 1.4473684211em; /* 22 / 15.2px = 1.4473684211 */
+  padding-bottom: 0.7236842105em; /* 11 / 15.2 = 0.7236842105 */
+  text-transform: uppercase;
 }
 
-/* Fix for the very last week; corrects spacing after .assigned */
-/* Still needs to be tweaked against margin-bottom on .assigned */
-/* May no longer be necessary after major top/bottom padding refactor */
-/*
-.week:last-child {
-  padding-bottom: 0.6315789474em;
+p {
+  padding-bottom: 1.1578947368em;
 }
-*/
 
-/* ========== State ========== */
-
-.hasjs .extended {
-  display: none;
+ul {
+  list-style-type: circle;
 }
-.is-visible .extended {
+ol {
+  counter-reset: enum;
+}
+ol, ul, li {
+  padding-bottom: 0.5789473684em; /* 11 / 19 = 0.5789473684 */
+}
+
+ol ol,
+ol ul,
+ul ul,
+ul ol {
+  padding-top: 0.5789473684em; /* 11 / 19 = 0.5789473684 */
+  padding-bottom: 0;
+}
+
+li ol {
+  padding-left: 1.1578947368em; /* 22 / 19px = 1.1578947368 */
+}
+
+ol > li::before {
+  counter-increment: enum;
+  content: counter(enum) ". ";
+  position: absolute;
+  margin-left: -1.1578947368em; /* 22 / 19px = 1.1578947368 */
+}
+
+a {
+  color: #666;
+}
+b, strong {
+  font-weight: bold;
+}
+cite, em, i {
+  font-style: italic;
+}
+code {
+  font-family: Menlo, Monaco, "Droid Sans Mono", Courier, "Courier New", monospace;
+  font-size: 0.85em;
+  background: #DDD;
+}
+
+header small {
   display: block;
 }
 
-/* Media Queries */
+/* Layout Styles */
+#header {
+  position: relative;
+  padding-top: 3.4736842105em; /* 66 / 19 = 3.4736842105 */
+}
+#header small,
+#nav-menu a {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0.5789473684em; /* 11 / 19 = 0.5789473684 */
+  padding-top: 0.5789473684em; /* 11 / 19 = 0.5789473684 */
+  padding-bottom: 0.5789473684em; /* 11 / 19 = 0.5789473684 */
+  font-weight: bold;
+}
+#nav-menu a {
+  left: auto;
+  top: 0.2894736842em; /* 5.5 / 19 = 0.2894736842em */
+  right: 0.2894736842em; /* 5.5 / 19 = 0.2894736842em */
+  padding: 0.2894736842em; /* 5.5 / 19 = 0.2894736842em */
+  border-radius: 0.2894736842em; /* 5.5 / 19 = 0.2894736842em */
+  font-weight: normal;
+  text-transform: uppercase;
+  background: #AAA;
+  color: #EEE;
+}
 
-/* @345px */
+#header,
+#content,
+#links,
+#instructor,
+#footer {
+  padding-left: 1.7368421053em; /* 33 / 19 (one and a half lead) */
+  padding-right: 1.1578947368em;
+  padding-left: 11%; /* 33 / 300 = 0.11 */
+  padding-right: 11%; /* 33 / 300 = 0.11 */
+}
+#links,
+#instructor {
+  padding-top: 2.3157894737em; /* 44 / 19 = 2.3157894737 */
+}
 
-@media screen and (min-width: 21.5625em) {
-  /* Let the nav breathe a bit more */
-  nav {
-    font-family: inherit;
+
+/* Modular Styles */
+#header a {
+  text-decoration: none;
+}
+
+#content h2 {
+  font-weight: normal;
+  font-size: 1.9531052632em; /* 37.109 / 19 = 1.9531052632 */
+  line-height: 1.1856961923em; /* 44 / 37.109 = 1.1856961923 */
+  padding-bottom: 0.5928480961em; /* 22 / 37.109 = 0.5928480961 */
+}
+.assigned h3 {
+  font-size: inherit;
+  line-height: inherit;
+}
+.assigned header {
+  padding-bottom: 0.5789473684em; /* 11 / 19 = 0.5789473684 */
+}
+#policies h3,
+#links h3,
+#instructor h3 {
+  padding-bottom: 0.4631578947em; /* 11 / 23.75 = 0.4631578947 */
+}
+h3 + small {
+  padding-bottom: 0.5789473684em; /* 11 / 19 = 0.5789473684 */
+}
+
+
+
+.tagline,
+.note,
+#footer p {
+  font-size: 0.8em; /* 15.2px / 19px */
+  line-height: 1.4473684211em; /* 22 / 15.2px = 1.4473684211 */
+  padding-bottom: 1.4473684211em;
+}
+
+.nav,
+.agenda,
+.assignments {
+  list-style-type: none;
+}
+
+.nav a {
+  display: block;
+  padding: 0.2894736842em; /* 5.5 / 19 = 0.2894736842em */
+  border-radius: 0.2894736842em;
+  text-align: center;
+  background: #DDD;
+}
+
+.agenda ol,
+.assignments ol {
+  padding-left: 0;
+  padding-top: 0;
+}
+
+.meeting::before {
+  content: "";
+}
+
+.week .assigned {
+  padding: 1.1578947368em; /* 22 / 19px = 1.1578947368 */
+  padding-left: 1.7368421053em; /* 33 / 19 = 1.7368421053 */
+  padding-bottom: 0;
+  background-color: #DDD;
+}
+.week + .week {
+  margin-top: 2.3157894737em; /* 44 / 19 */
+}
+
+.button .toggle {
+  display: block;
+  margin-top: 1.1578947368em; /* 22 / 19px = 1.1578947368 */
+  padding: 0.2894736842em; /* 5.5 / 19 = 0.2894736842em */
+  border-radius: 0.2894736842em; /* 5.5 / 19 = 0.2894736842em */
+  text-decoration: none;
+  text-align: center;
+  background: #AAA;
+  color: #EEE;
+}
+
+/* State Styles */
+.js .nav {
+  height: 0;
+  padding: 0;
+  overflow-y: hidden;
+}
+.js .expandable .nav {
+  transition: height .2s ease-out;
+}
+.js .is-expanded .nav {
+  height: 11.5789473684em; /* 220 / 19 = 11.5789473684em */
+}
+.js .is-expanded #nav-menu a {
+  background: inherit;
+  color: #666;
+}
+.js body::after {
+  display: none;
+  content: 'menu';
+}
+
+#calendar.js .extended {
+  display: none;
+}
+#calendar.js .is-visible .extended {
+  display: block;
+}
+
+@media screen and (min-width: 600px) {
+  #header {
+    padding-top: 4.6315789474em; /* 88 / 19 = 4.6315789474 */
+  }
+  #content h2 {
+    padding-top: 1.1856961923em; /* 44 / 37.109 = 1.1856961923 */
+  }
+  .nav {
+    position: absolute;
+    right: 0.2894736842em; /* 5.5 / 19 = 0.2894736842em */;
+    top: 0.2894736842em; /* 5.5 / 19 = 0.2894736842em */;
+  }
+  .nav li {
+    float: left;
+    margin-left: 0.2894736842em; /* 5.5 / 19 = 0.2894736842em */
+  }
+  .nav a {
+    background: #AAA;
+    color: #EEE;
+  }
+  .flexbox .nav {
+    display: flex;
+  }
+  .flexbox .nav li {
+    float: none;
+  }
+  .js .nav {
+    height: auto;
+    padding-bottom: 0.5789473684em; /* 11 / 19 = 0.5789473684 */
+    overflow-y: auto;
+  }
+  .js body::after {
+    content: '';
   }
 }
 
-/* @560px */
-
-@media screen and (min-width: 35em) {
-  .flexbox .agenda > ol {
-    display: flex;
-    justify-content: space-between;
+@media screen and (min-width: 820px) {
+  #header h1,
+  #header .tagline,
+  #footer p {
+    width: 40%;
+  }
+  #header small {
+    left: 5.5%;
+  }
+  .nav {
+    right: 5.5%;
+  }
+  #projects #content,
+  #policies #content {
+    width: 60%;
+  }
+  .week .agenda {
+    float: left;
+    width: 40%;
+  }
+  .week .assigned {
+    margin-left: 45%;
+  }
+  .week > header {
+    clear: both;
+    padding-top: 1.1578947368em; /* 22 / 19px = 1.1578947368 */
+    padding-bottom: 1.1578947368em; /* 22 / 19px = 1.1578947368 */
+  }
+  #calendar.cssgrid .is-visible .extended {
+    display: grid; /* Yuck, yuck, yuck */
+  }
+  .cssgrid .week {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-areas:
+    "header header"
+    "agenda assigned";
+    grid-row-gap: 1.1578947368em; /* 22 / 19px = 1.1578947368 */
+    grid-column-gap: 1.1578947368em; /* 22 / 19px = 1.1578947368 */
+  }
+  .cssgrid .week > header {
+    grid-area: header;
+    padding-bottom: 0;
+  }
+  .cssgrid .week .agenda {
+    grid-area: agenda;
+    float: none;
+    width: auto;
   }
   .meeting {
-    padding-bottom: 1.2631578947em; /* ~ 24px @ 19px/em */
+    padding-bottom: 1.7368421053em; /* 33 / 19 = 1.7368421053 */
   }
-  .flexbox .meeting {
-    flex: 0 1 43.5484%;
-  }
-  .assigned {
-    padding: 1.2631578947em 1.8947368421em 0.6315789474em 1.8947368421em;
-    margin-left: -1.8947368421em;
-    margin-right: -1.8947368421em;
-  }
-  #instructor.assigned {
-    padding-left: 11.3208%;
-    padding-right: 11.3208%;
-    margin: 0 -11.3208%; /* 60px / 530px (650-120) */
-  }
-  .flexbox .link-group {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  .flexbox #course-resources {
-    flex: 0 1 100%;
-  }
-  .flexbox #essential-tools,
-  .flexbox #essential-references {
-    flex: 0 1 43.5484%;
-  }
-}
-
-/* @650px */
-
-@media screen and (min-width: 40.625em) {
-  html {
-    padding: 0;
-  }
-  header,
-  footer,
-  .primary,
-  #instructor.assigned,
-  #links {
-    padding-left: 14.28571429%; /* 93/651 */
-    padding-right: 28.57142857%; /* 186/651 */
-  }
-  #instructor.assigned {
-    margin: 0;
-  }
-  nav {
-    width: 57.14285714%;
-    left: 14.28571429%;
-  }
-  .preview {
-    margin-left: -25%; /* 93/372 */
-    padding-left: 25%;
-    margin-right: -50%; /* 186/372 */
-    padding-right: 50%;
-  }
-  .flexbox .agenda > ol {
-    display: block;
-  }
-}
-
-/* 830px */
-
-@media screen and (min-width: 51.875em) {
-  .flexbox .agenda > ol {
-    display: flex; /* My life for element/container queries...*/
-  }
-  article + article,
-  .week,
-  .preview,
-  #projects article,
-  #grading {
-    padding-top: 2.5263157895em; /* ~ 48px @ 16px/em */
-  }
-  .preview .agenda {
-    padding-top: 1.2631578947em;
-  }
-  .preview,
-  .preview .meeting {
-    padding-bottom: 2.5263157895em; /* ~ 48px @ 16px/em */
-  }
-  #projects .preview {
-    margin-top: 2.5263157895em; /* ~ 48px @ 16px/em */
-  }
-  #instructor.assigned,
-  .assigned,
-  .deliverables {
-    padding-top: 1.8947368421em;
-  }
-  .assigned + .assigned {
-    padding-top: 0;
+  .cssgrid .week .assigned {
+    grid-area: .assigned;
+    margin-left: 0;
   }
 }
