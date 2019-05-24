@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>COM531: Web Application Development</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/bootstrap-custom.css">
+  <script type="text/javascript" src="//use.typekit.net/oij6xqh.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+</head>
+<body>
+  <!--
+    Basic nav cribbed straight from Bootstrap; see
+    http://twitter.github.com/bootstrap/examples/starter-template.html
+  -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <div class="container-fluid">
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
+        <a class="brand" rel="home" href="http://karlstolley.github.com/531/">531</a>
+        <div class="nav-collapse">
+          <ul class="nav pull-right">
+            <li class="active"><a href="/531/">Calendar</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="https://github.com/karlstolley/531/wiki">Wiki</a></li>
+            <li><a href="https://github.com/karlstolley/531/wiki/resources">Resources</a></li>
+            <li><a href="https://karlstolley.campfirenow.com/room/528252">Campfire</a></li>
+            <li><a href="policies.html">Policies</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+  </nav>
+  <article id="page" class="calendar container-fluid">
+    <header id="header" class="hero-unit">
+      <h1>Web Application Development</h1>
+      <p>A graduate course in developing applications for the Web in Ruby on Rails. Taught by <a href="http://karlstolley.com/">Karl Stolley</a>, Fall Semester 2012 at <a href="http://www.iit.edu/">Illinois Institute of Technology</a>.</p>
+    </header>
+    <section id="content">
+      <h1>Course Calendar</h1>
+      <dl id="calendar">
+        <dt>The Whole Semester in One Night <time datetime="2012-08-22">August 22, 2012</time></dt>
+        <dd>
+          <ul class="row-fluid">
+            <li class="news span4">
+              <h2>News</h2>
+              <p>
+                Pragmatic Bookshelf has <a href="http://pragprog.com/titles/rails4/release_info">released an updated version</a> of
+                <i>Agile Development with Rails</i> that now covers Rails 3.2.6 (up from
+                Rails 3.2.0). And that’s why it’s always good to get eBook versions from
+                PragProg.
+              </p>
+            </li>
+            <li class="agenda span4">
+              <h2>Agenda</h2>
+              <ol>
+                <li>Welcome &amp; introductions</li>
+                <li>Go over course <a href="policies.html">policies</a>, calendar, &amp; <a href="projects.html">projects</a></li>
+                <li><a href="https://github.com/karlstolley/lab/wiki">Set up git, oh-my-zsh, and RVM + Ruby, Rails</a></li>
+                <li>
+                  Build <a href="https://github.com/karlstolley/531/tree/myapp">a simple Rails app</a> &amp; poke at it
+                </li>
+              </ol>
+            </li>
+            <li class="assigned span4">
+              <h2>Assigned</h2>
+              <ol>
+                <li>(Re)Read <i>Learn to Program</i> (<abbr title="Learn to Program">L2P</abbr>), Ch. 3, 4, 6, 8, 12 (esp. 12.3, “The Hash Class”)</li>
+                <li>Read <i>Agile Web Development with Rails</i> (<abbr title="Agile Development with Rails">AgDev</abbr>), Ch. 4; 2-3; 18</li>
+                <li>Set up a Rails dev environment on your personal computer</li>
+                <li>Generate ideas for your first (simple) app</li>
+              </ol>
+            </li>
+          </ul>
+        </dd>
+        <dt>Scaffolding &amp; The Anatomy of a Rails App <time datetime="2012-08-29">August 29, 2012</time></dt>
+        <dd>
+          <ul class="row-fluid">
+            <li class="news span4">
+              <h2>News</h2>
+              <p>
+                <b>Book Deals</b>: <a href="http://twitter.com/abookapart/status/240467816850006016">A Book Apart has everything 10% off</a>
+                with the discount code SUMMER through Labor Day. Pragmatic Programmers has also been
+                having random, short-lived sales; follow @pragprog on Twitter and watch for tweets
+                <a href="http://twitter.com/pragprog/status/240152195570466817">like this one</a>
+                from Randy the Gerbil (yeah, I know) for some pretty serious discounts.
+              </p>
+            </li>
+            <li class="agenda span4">
+              <h2>Agenda</h2>
+              <ol>
+                <li>Reading discussion</li>
+                <li>Some core principles: CRUD and DRY</li>
+                <li><code>rails g</code> &amp; <code>rake</code></li>
+              </ol>
+            </li>
+            <li class="assigned span4">
+              <h2>Assigned</h2>
+              <ol>
+                <li>Read &amp; program along with <abbr title="Agile Development with Rails">AgDev</abbr> Ch. 5-8; 19</li>
+              </ol>
+            </li>
+          </ul>
+        </dd>
+        <dt>Models &amp; Data <time datetime="2012-09-05">September 5, 2012</time></dt>
+        <dd>
+          <ul class="row-fluid">
+            <!--
+            <li class="news span4">
+              <h2>News</h2>
+              <p>Add stuff if there's news. And uncomment.</p>
+            </li>
+            -->
+            <li class="agenda span6">
+              <h2>Agenda</h2>
+              <ol>
+                <li>Reading discussion</li>
+                <li>Database migrations</li>
+                <li>Models: validation, associations, other goodies</li>
+              </ol>
+            </li>
+            <li class="assigned span6">
+              <h2>Assigned</h2>
+              <ol>
+                <li>Read &amp; program along with <abbr title="Agile Development with Rails">AgDev</abbr> Ch. 9-10; 21</li>
+                <li>Read &amp; program along with <i>The Rails View</i> (<abbr title="The Rails View">RView</abbr>), Ch. 1</li>
+              </ol>
+            </li>
+          </ul>
+        </dd>
+        <dt>Views &amp; The Asset Pipeline <time datetime="2012-09-12">September 12, 2012</time></dt>
+        <dd>
+          <ul class="row-fluid">
+            <!--
+            <li class="news span4">
+              <h2>News</h2>
+              <p>Add stuff if there's news. And uncomment.</p>
+            </li>
+            -->
+            <li class="agenda span6">
+              <h2>Agenda</h2>
+              <ol>
+                <li>Reading discussion</li>
+                <li>Views &amp; templating, partials, erb</li>
+                <li>Asset pipeline</li>
+              </ol>
+            </li>
+            <li class="assigned span6">
+              <h2>Assigned</h2>
+              <ol>
+                <li>Read &amp; program along with <abbr title="Agile Development with Rails">AgDev</abbr>, Ch. 20</li>
+                <li>Read &amp; program along with <abbr title="The Rails View">RView</abbr>, Ch. 2 &amp; 3</li>
+              </ol>
+            </li>
+          </ul>
+        </dd>
+        <dt>Controllers, Routes &amp; REST <time datetime="2012-09-19">September 19, 2012</time></dt>
+        <dd>
+          <ul class="row-fluid">
+            <!--
+            <li class="news span4">
+              <h2>News</h2>
+              <p>Add stuff if there's news. And uncomment.</p>
+            </li>
+            -->
+            <li class="agenda span6">
+              <h2>Agenda</h2>
+              <ol>
+                <li>Reading discussion</li>
+              </ol>
+            </li>
+            <li class="assigned span6">
+              <h2>Assigned</h2>
+              <ol>
+                <li>Read &amp; program along with <abbr title="Agile Development with Rails">AgDev</abbr>, Ch. 23</li>
+              </ol>
+            </li>
+          </ul>
+        </dd>
+        <dt>Migrations &amp; More Complex Models. Virtual Class(?); Stolley at CPTSC <time datetime="2012-09-26">September 26, 2012</time></dt>
+        <dd>
+          <ul class="row-fluid">
+            <!--
+            <li class="news span4">
+              <h2>News</h2>
+              <p>Add stuff if there's news. And uncomment.</p>
+            </li>
+            -->
+            <li class="agenda span6">
+              <h2>Agenda</h2>
+              <ol>
+                <li>Class, if held, will be virtual in our <a href="https://karlstolley.campfirenow.com/room/528252">Campfire room</a></li>
+              </ol>
+            </li>
+            <li class="assigned span6">
+              <h2>Assigned</h2>
+              <ol>
+                <li>Finish Alpha App</li>
+              </ol>
+            </li>
+          </ul>
+        </dd>
+        <dt>Work Night & Clarification <time datetime="2012-10-03">October 3, 2012</time></dt>
+        <dd>
+          <ul class="row-fluid">
+            <!--
+            <li class="news span4">
+              <h2>News</h2>
+              <p>Add stuff if there's news. And uncomment.</p>
+            </li>
+            -->
+            <li class="agenda span6">
+              <h2>Agenda</h2>
+              <ol>
+                <li>Research, resources, and Rails development</li>
+                <li>Gems for additional functionality: RDiscount, Paperclip</li>
+                <li>Work time</li>
+              </ol>
+            </li>
+            <li class="assigned span6">
+              <h2>Assigned</h2>
+              <ol>
+                <li>Read &amp; program along with <i>The Pragmatic Guide to Sass</i> (all)</li>
+                <li>Read through &amp; familiarize yourself with the <a href="http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html">Sass Reference</a></li>
+                <li>Read through &amp; familiarize yourself with the <a href="">Twitter Bootstrap</a> documentation</li>
+                <li>Check out Zurb Foundation</li>
+                <li>Find the different Bootstrap/SASS/Rails gems on GitHub; add to wiki</li>
+              </ol>
+            </li>
+          </ul>
+        </dd>
+        <dt>Alpha App Due; Presentations.<time datetime="2012-10-10">October 10, 2012</time></dt>
+        <dd>
+          <ul class="row-fluid">
+            <!--
+            <li class="news span4">
+              <h2>News</h2>
+              <p>Add stuff if there's news. And uncomment.</p>
+            </li>
+            -->
+            <li class="agenda span6">
+              <h2>Agenda</h2>
+              <ol>
+                <li>Alpha App presentations</li>
+                <li>Reading discussion</li>
+              </ol>
+            </li>
+            <li class="assigned span6">
+              <h2>Assigned</h2>
+              <ol>
+                <li>TBD</li>
+              </ol>
+            </li>
+          </ul>
+        </dd>
+        <dt>Catching up on what we've not done: Gems, Bundler, and the Gem File; and Front-End Frameworks; Sass<time datetime="2012-10-17">October 17, 2012</time></dt>
+        <dd>
+          <ul class="row-fluid">
+            <!--
+            <li class="news span4">
+              <h2>News</h2>
+              <p>Add stuff if there's news. And uncomment.</p>
+            </li>
+            -->
+            <li class="agenda span6">
+              <h2>Agenda</h2>
+              <ol>
+                <li>Catch-up discussion</li>
+                <li>Calendar review: what to change? Add?</li>
+                <li>Project Two</li>
+              </ol>
+            </li>
+            <li class="assigned span6">
+              <h2>Assigned</h2>
+              <ol>
+                <li><i>Eloquent JavaScript</i>, Chapters 1, 2, 3, 6, and 9</li>
+                <li><i>CoffeeScript: Accelerated JavaScript Development</i>, Chapter 1 (skip the install & text editor bits and read 1.3, 1.4, and 1.5); Chapter 5 (refer to chapters 2, 3, and 4 as necessary when reading 5)</li>
+              </ol>
+            </li>
+          </ul>
+        </dd>
+        <dt>Eloquent JavaScript &amp; CoffeeScript <time datetime="2012-10-24">October 24, 2012</time></dt>
+        <dd>
+          <ul class="row-fluid">
+            <!--
+            <li class="news span4">
+              <h2>News</h2>
+              <p>Add stuff if there's news. And uncomment.</p>
+            </li>
+            -->
+            <li class="agenda span6">
+              <h2>Agenda</h2>
+              <ol>
+                <li>Reading discussion</li>
+              </ol>
+            </li>
+            <li class="assigned span6">
+              <h2>Assigned</h2>
+              <ol>
+                <li><i>Rails Recipes</i>, "Add Unobtrusive Ajax with jQuery"</li>
+                <li><i>pjax</i>, <a href="https://github.com/defunkt/jquery-pjax">https://github.com/defunkt/jquery-pjax</a></li>
+                <li>Turbo Links, <a href="https://github.com/rails/turbolinks">https://github.com/rails/turbolinks</a></li>
+                <li>Review Codecademy <a href="http://www.codecademy.com/tracks/jquery">jQuery track</a> to see how jQuery works</li>
+              </ol>
+            </li>
+          </ul>
+        </dd>
+        <dt>AJAX &amp; pjax  <time datetime="2012-10-31">October 31, 2012</time></dt>
+        <dd>
+          <ul class="row-fluid">
+            <!--
+            <li class="news span4">
+              <h2>News</h2>
+              <p>Add stuff if there's news. And uncomment.</p>
+            </li>
+            -->
+            <li class="agenda span6">
+              <h2>Agenda</h2>
+              <ol>
+                <li>Reading discussion</li>
+                <li>Basic authentication (work through  *Rails Recipe* 51 together)</li>
+                <li>
+                  jQuery & AJAX: make a listing of things editable (work through
+                  <a href="http://notes.rehali.com/?p=97">this post</a> together)
+                </li>
+                <li>Work time</li>
+              </ol>
+            </li>
+            <li class="assigned span6">
+              <h2>Assigned</h2>
+              <ol>
+                <li><i>Rails Recipes</i>, Recipes 2, 4, 13, 19; Part 4 (all); Recipe 51.</li>
+              </ol>
+            </li>
+          </ul>
+        </dd>
+        <dt>Rails Recipes <time datetime="2012-11-07">November 7, 2012</time></dt>
+        <dd>
+          <ul class="row-fluid">
+            <!--
+            <li class="news span4">
+              <h2>News</h2>
+              <p>Add stuff if there's news. And uncomment.</p>
+            </li>
+            -->
+            <li class="agenda span6">
+              <h2>Agenda</h2>
+              <ol>
+                <li>Reading discussion</li>
+              </ol>
+            </li>
+            <li class="assigned span6">
+              <h2>Assigned</h2>
+              <ol>
+                <li>Read <abbr title="Agile Development with Rails">AgDev</abbr> Ch. 16</li>
+              </ol>
+            </li>
+          </ul>
+        </dd>
+        <dt>Deploying Rails Apps <time datetime="2012-11-14">November 14, 2012</time></dt>
+        <dd>
+          <ul class="row-fluid">
+            <!--
+            <li class="news span4">
+              <h2>News</h2>
+              <p>Add stuff if there's news. And uncomment.</p>
+            </li>
+            -->
+            <li class="agenda span6">
+              <h2>Agenda</h2>
+              <ol>
+                <li>Reading discussion</li>
+              </ol>
+            </li>
+            <li class="assigned span6">
+              <h2>Assigned</h2>
+              <ol>
+                <li></li>
+              </ol>
+            </li>
+          </ul>
+        </dd>
+        <dt>Thanksgiving Break <time datetime="2012-11-21">November 21, 2012</time></dt>
+        <dd>No class.</dd>
+        <dt>Work Week <time datetime="2012-11-28">November 28, 2012</time></dt>
+        <dd>
+          <ul class="row-fluid">
+            <!--
+            <li class="news span4">
+              <h2>News</h2>
+              <p>Add stuff if there's news. And uncomment.</p>
+            </li>
+            -->
+            <li class="agenda span6">
+              <h2>Agenda</h2>
+              <ol>
+                <li>Open work time</li>
+              </ol>
+            </li>
+            <li class="assigned span6">
+              <h2>Assigned</h2>
+              <ol>
+                <li>Finishing touches on final projects</li>
+              </ol>
+            </li>
+          </ul>
+        </dd>
+        <dt>Final Meeting <time datetime="2012-12-05">December 5, 2012 (Time TBD)</time></dt>
+        <dd>
+          <ul class="row-fluid">
+            <!--
+            <li class="news span4">
+              <h2>News</h2>
+              <p>Add stuff if there's news. And uncomment.</p>
+            </li>
+            -->
+            <li class="agenda span6">
+              <h2>Agenda</h2>
+              <ol>
+                <li>Final project presentations</li>
+              </ol>
+            </li>
+          </ul>
+        </dd>
+      </dl>
+    </section>
+    <footer class="row-fluid" id="footer">
+      <p class="span6">
+        Course created by <a href="http://karlstolley.com/">Karl Stolley</a>; forkable on <a href="https://github.com/karlstolley/531/tree/gh-pages">GitHub</a>. Content licensed under <a href="http://creativecommons.org/licenses/by/2.0/" rel="license">Creative Commons</a>. Powered by <a href="http://twitter.github.com/bootstrap/">Bootstrap</a>, <a href="https://github.com/thomas-mcdonald/bootstrap-sass/">Bootstrap-Sass</a>, <a href="https://help.github.com/articles/creating-project-pages-manually">GitHub Project Pages</a>, <a href="http://modernizr.com/">Modernizr</a>, and <a href="https://typekit.com/">Typekit</a>.
+      </p>
+    </footer>
+  </article>
+  <script src="assets/js/modernizr.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+  <script src="assets/js/bootstrap-transition.js"></script>
+  <script src="assets/js/bootstrap-button.js"></script>
+  <script src="assets/js/bootstrap-collapse.js"></script>
+</body>
+</html>

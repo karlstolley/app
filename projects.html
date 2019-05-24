@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>COM531: Web Application Development</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/bootstrap-custom.css">
+  <script type="text/javascript" src="//use.typekit.net/oij6xqh.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+</head>
+<body>
+  <!--
+    Basic nav cribbed straight from Bootstrap; see
+    http://twitter.github.com/bootstrap/examples/starter-template.html
+  -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <div class="container-fluid">
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
+        <a class="brand" rel="home" href="http://karlstolley.github.com/531/">531</a>
+        <div class="nav-collapse">
+          <ul class="nav pull-right">
+            <li><a href="/531/">Calendar</a></li>
+            <li class="active"><a href="projects.html">Projects</a></li>
+            <li><a href="https://github.com/karlstolley/531/wiki">Wiki</a></li>
+            <li><a href="https://github.com/karlstolley/531/wiki/resources">Resources</a></li>
+            <li><a href="https://karlstolley.campfirenow.com/room/528252">Campfire</a></li>
+            <li><a href="policies.html">Policies</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+  </nav>
+  <article id="page" class="calendar container-fluid">
+    <header id="header" class="hero-unit">
+      <h1>Web Application Development</h1>
+      <p>A graduate course in developing applications for the Web in Ruby on Rails. Taught by <a href="http://karlstolley.com/">Karl Stolley</a>, Fall Semester 2012 at <a href="http://www.iit.edu/">Illinois Institute of Technology</a>.</p>
+    </header>
+    <section id="content">
+      <h1>Course Projects</h1>
+      <dl id="policies">
+        <dt>Project One: Alpha App</dt>
+        <dd>
+          <h2>Description</h2>
+          <p>
+            For the first project, you will build the alpha version of your Rails app. The app can
+            be anything you believe to be interesting and useful. It should have only the most
+            basic functionality and design to be viable; it's purpose is largely to help you learn
+            to work with Rails and make mistakes. Think of it as a proof of concept, both for the
+            app itself, and for your own initial skills in Rails development.
+          </p>
+          <h2>Requirements</h2>
+          <ul>
+            <li>
+              Use Ruby 1.9.3, Rails 3.2
+            </li>
+            <li>
+              Frequent, detailed commits to your Git repository (include commands you may have run,
+              e.g., <code>rails generate</code> in commit messages, when applicable) and frequent
+              pushes to your GitHub remote repository
+            </li>
+            <li>
+              Do development work on a <code>dev</code> branch in Git; merge only the best,
+              functional, test-passing work over to the <code>master</code> branch.
+            </li>
+            <li>
+              Use <a
+              href="https://github.com/yabawock/bootstrap-sass-rails">bootstrap-sass-rails</a> or
+              another gem of your choice for building over <a
+              href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a> as a baseline for
+              your app’s design
+            </li>
+            <li>
+              Strive for at least two database tables, <a href="http://guides.rubyonrails.org/association_basics.html">associated in some way</a>
+            </li>
+            <li>
+              Develop a suite of functional and unit tests for your application
+            </li>
+          </ul>
+          <h2>Deliverables</h2>
+          <ol>
+            <li>
+              A functional Rails app that can be racked up and run locally
+            </li>
+            <li>
+              The GitHub repository for the app (link will be emailed to the instructor)
+            </li>
+            <li>
+              A 5-minute presentation of your app on October 10
+            </li>
+            <li>
+              A project memo, submitted as an email to the instructor the night the app is due (October 10)
+            </li>
+          </ol>
+        </dd>
+        <dt>Project Two: Beta App</dt>
+        <dd>
+          <h2>Description</h2>
+          <p>
+            For the beta app, you will either begin again with the
+            app created for Project One, or rework/abandon your idea for a brand-new app.
+            Requirements and deliverables will be similar to those of Project One; however, you will
+            more fully flesh out the design of your app, both functionally and visually. You will
+            also deploy your app to a public-facing server and be responsible for some means of
+            user/administrative authentication.
+          </p>
+          <h2>Deliverables</h2>
+          <ul>
+            <li>
+             A functional Rails app that can be racked up and run locally, and deployed long
+             enough for proof-of-concept to a public facing server (e.g., on Heroku)
+            </li>
+            <li>
+              Three types/areas of functionality that you intend to add, proposed to the instructor
+              by October 23 (hint: score <cite>Rails Recipes</cite> for inspiration and ideas, if
+              you're coming up short).
+            </li>
+            <li>
+              Some means of user/administrator authentication; can be very basic, or can involve a
+              Gem
+            </li>
+            <li>
+              The GitHub repository for the app (link will be emailed to the instructor)
+            </li>
+            <li>
+              A ten-minute presentation of your app on December 5
+            </li>
+            <li>
+              A project memo, submitted as an email to the instructor the night the app is due
+              (December 5)
+            </li>
+          </ul>
+        </dd>
+      </dl>
+    </section>
+    <footer class="row-fluid" id="footer">
+      <p class="span6">
+        Course created by <a href="http://karlstolley.com/">Karl Stolley</a>; forkable on <a href="https://github.com/karlstolley/531/tree/gh-pages">GitHub</a>. Content licensed under <a href="http://creativecommons.org/licenses/by/2.0/" rel="license">Creative Commons</a>. Powered by <a href="http://twitter.github.com/bootstrap/">Bootstrap</a>, <a href="https://github.com/thomas-mcdonald/bootstrap-sass/">Bootstrap-Sass</a>, <a href="https://help.github.com/articles/creating-project-pages-manually">GitHub Project Pages</a>, <a href="http://modernizr.com/">Modernizr</a>, and <a href="https://typekit.com/">Typekit</a>.
+      </p>
+    </footer>
+  </article>
+  <script src="assets/js/modernizr.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+  <script src="assets/js/bootstrap-transition.js"></script>
+  <script src="assets/js/bootstrap-button.js"></script>
+  <script src="assets/js/bootstrap-collapse.js"></script>
+</body>
+</html>
